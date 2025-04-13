@@ -105,22 +105,7 @@ const techStackImgs = [
     name: "Tailwindcss ",
     imgPath: "/images/logos/tailwindcss.svg",
   },
-  {
-    name: "Firebase ",
-    imgPath: "/images/logos/firebase.svg",
-  },
-  {
-    name: "Redux ",
-    imgPath: "/images/logos/redux.svg",
-  },
-  {
-    name: "Mysql",
-    imgPath: "/images/logos/mysql.svg",
-  },
-  {
-    name: "MongoDB",
-    imgPath: "/images/logos/mongodb.svg",
-  },
+
 ];
 
 const techStackIcons = [
@@ -137,17 +122,12 @@ const techStackIcons = [
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
+    name: "Three.js Developer",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
-  {
-    name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
-    scale: 0.05,
-    rotation: [0, -Math.PI / 4, 0],
-  },
+
 ];
 
 const expCards = [
