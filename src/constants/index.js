@@ -82,6 +82,17 @@ const abilities = [
 
 const techStackImgs = [
   {
+    name: "Javascript Developer",
+    imgPath: "/images/logos/javascript.svg",
+  }, {
+    name: "Typescript Developer",
+    imgPath: "/images/logos/typescript.svg",
+  },
+  {
+    name: "Nodejs Developer",
+    imgPath: "/images/logos/node.png",
+  },
+  {
     name: "Next Developer",
     imgPath: "/images/logos/nextjs.svg",
   },
@@ -90,45 +101,33 @@ const techStackImgs = [
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "JS Developer",
-    imgPath: "/images/logos/javascript.svg",
-  },
-  {
-    name: "Typescript Developer",
-    imgPath: "/images/logos/typescript.svg",
-  },
-  {
-    name: " Express ",
-    imgPath: "/images/logos/express-js.svg",
-  },
-  {
     name: "Tailwindcss ",
     imgPath: "/images/logos/tailwindcss.svg",
   },
 
 ];
 
-const techStackIcons = [
-  {
-    name: "React Developer",
-    modelPath: "/models/react_logo-transformed.glb",
-    scale: 1,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "Three.js Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
-    rotation: [0, 0, 0],
-  },
+// const techStackIcons = [
+//   {
+//     name: "React Developer",
+//     modelPath: "/models/react_logo-transformed.glb",
+//     scale: 1,
+//     rotation: [0, 0, 0],
+//   },
+//   {
+//     name: "Backend Developer",
+//     modelPath: "/models/node-transformed.glb",
+//     scale: 5,
+//     rotation: [0, -Math.PI / 2, 0],
+//   },
+//   {
+//     name: "Three.js Developer",
+//     modelPath: "/models/three.js-transformed.glb",
+//     scale: 0.05,
+//     rotation: [0, 0, 0],
+//   },
 
-];
+// ];
 
 const expCards = [
   {
@@ -230,7 +229,7 @@ export {
   abilities, counterItems,
   expCards,
   expLogos, logoIconsList, navLinks, socialImgs,
-  techStackIcons,
+  // techStackIcons,
   techStackImgs, testimonials, words
 };
 
