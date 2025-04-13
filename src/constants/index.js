@@ -234,16 +234,24 @@ const testimonials = [
 
 const socialImgs = [
   {
+    name: "github",
+    imgPath: "/images/github.svg",
+    src: "https://github.com/abduljalal-s",
+  },
+  {
     name: "insta",
     imgPath: "/images/insta.png",
+    src: "https://www.instagram.com/21stcoderx",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    src: "https://x.com/21stdev",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    src: "https://www.linkedin.com/in/abduljalalsulaiman/",
   },
 ];
 

@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import { socialImgs } from "../constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,8 +54,9 @@ const AppShowcase = () => {
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+               Movies Info Made Simple with a Powerful, User-Friendly App
+                called CineSync
+
               </h2>
               <p className="text-white-50 md:text-xl">
                 An app built with React Native, Expo, & TailwindCSS for a fast,
@@ -83,6 +85,7 @@ const AppShowcase = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };

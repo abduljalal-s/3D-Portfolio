@@ -4,7 +4,7 @@ import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
 import HeroExperience from "../components/models/hero_models/HeroExperience";
-import { words } from "../constants";
+import { socialImgs, words } from "../constants";
 
 const Hero = () => {
   useGSAP(() => {
@@ -59,7 +59,19 @@ const Hero = () => {
               text="See My Work"
               className="md:w-80 md:h-16 w-60 h-12"
               id="counter"
+              
             />
+            <div className="flex gap-2">
+                {socialImgs.map((socialImg, index) => (
+                  <div
+                  src={socialImg.imgPath}
+                    alt="social icon"
+                    onClick={() => window.open(socialImg.src, "_blank")}
+                  key={index} className="icon">
+                    <img src={socialImg.imgPath} alt="social icon" />
+                  </div>
+                ))}
+              </div>
           </div>
         </header>
 
