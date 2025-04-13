@@ -155,7 +155,7 @@ const expCards = [
     review: "Abduljalal's brought creativity and technical expertise to the team, significantly improving our back- end performance.His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
+    title: "Full Stack Developer",
     date: "March 2024 - November 2024",
     responsibilities: [
       "Joined a team of 3 to develop a Website to create a delightful user experience forover 35000 students",
@@ -167,7 +167,7 @@ const expCards = [
     review: "Abduljalal’s contributions to clients's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/logo1.jpeg",
     logoPath: "/images/exp2.jpg",
-    title: "Full Stack Developer",
+    title: "Web Developer",
     date: "June 2023 - January 2024",
     responsibilities: [
       "Optimized SEO strategies, increasing site visibility by 90% for two businesses, driving substantial traffic growth, and expanding the customer base to over 1,000 active users.",
