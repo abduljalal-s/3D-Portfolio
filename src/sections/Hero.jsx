@@ -7,85 +7,94 @@ import HeroExperience from "../components/models/hero_models/HeroExperience";
 import { socialImgs, words } from "../constants";
 
 const Hero = () => {
-  useGSAP(() => {
-    gsap.fromTo(
-      ".hero-text h1",
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
-    );
-  });
+	useGSAP(() => {
+		gsap.fromTo(
+			".hero-text h1",
+			{ y: 50, opacity: 0 },
+			{ y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
+		);
+	});
 
-  return (
-    <section id="hero" className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="" />
-      </div>
+	return (
+		<section id='hero' className='relative overflow-hidden'>
+			<div className='absolute top-0 left-0 z-10'>
+				<img src='/images/bg.png' alt='' />
+			</div>
 
-      <div className="hero-layout">
-        {/* LEFT: Hero Content */}
-        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
-          <div className="flex flex-col gap-7">
-            <div className="hero-text">
-              <h1>
-                Shaping
-                <span className="slide">
-                  <span className="wrapper">
-                    {words.map((word, index) => (
-                      <span
-                        key={index}
-                        className="flex items-center md:gap-3 gap-1 pb-2"
-                      >
-                        <img
-                          src={word.imgPath}
-                          alt="person"
-                          className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
-                        />
-                        <span>{word.text}</span>
-                      </span>
-                    ))}
-                  </span>
-                </span>
-              </h1>
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
-            </div>
+			<div className='hero-layout'>
+				{/* LEFT: Hero Content */}
+				<header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
+					<div className='flex flex-col gap-7'>
+						<div className='hero-text'>
+							<h1>
+								Shaping
+								<span className='slide'>
+									<span className='wrapper'>
+										{words.map((word, index) => (
+											<span
+												key={index}
+												className='flex items-center md:gap-3 gap-1 pb-2'
+											>
+												<img
+													src={word.imgPath}
+													alt='person'
+													className='xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50'
+												/>
+												<span>{word.text}</span>
+											</span>
+										))}
+									</span>
+								</span>
+							</h1>
+							<h1>into Real Projects</h1>
+							<h1>that Deliver Results</h1>
+						</div>
 
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Abduljalal, a developer based in Nigeria with a passion for
-              code.
-            </p>
+						<p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
+							I’m a results-driven software engineer with a passion for building
+							scalable, efficient systems that solve real-world problems. With
+							deep expertise in [Nextjs,React-nati], I’ve led and contributed to
+							projects ranging from sleek front-end interfaces to complex
+							back-end architectures. I thrive in collaborative environments,
+							blending technical insight with clear communication to drive
+							innovation. Whether optimizing performance or architecting new
+							solutions, I bring a relentless focus on quality and user
+							experience. I’m always exploring new tools and techniques to stay
+							ahead in a rapidly evolving tech landscape.
+						</p>
 
-            <Button
-              text="See My Work"
-              className="md:w-80 md:h-16 w-60 h-12"
-              id="counter"
-              
-            />
-            <div className="flex gap-2">
-                {socialImgs.map((socialImg, index) => (
-                  <div
-                  src={socialImg.imgPath}
-                    alt="social icon"
-                    onClick={() => window.open(socialImg.src, "_blank")}
-                  key={index} className="icon">
-                    <img src={socialImg.imgPath} alt="social icon" />
-                  </div>
-                ))}
-              </div>
-          </div>
-        </header>
+						<Button
+							text='See My Work'
+							className='md:w-80 md:h-16 w-60 h-12'
+							id='counter'
+						/>
+						<div className='flex gap-2'>
+							{socialImgs.map((socialImg, index) => (
+								<div
+									src={socialImg.imgPath}
+									alt='social icon'
+									onClick={() => window.open(socialImg.src, "_blank")}
+									key={index}
+									className='icon'
+								>
+									<img src={socialImg.imgPath} alt='social icon' />
+								</div>
+							))}
+						</div>
+					</div>
+				</header>
 
-        {/* RIGHT: 3D Model or Visual */}
-        <figure>
-          <div className="hero-3d-layout">
-            <HeroExperience />
-          </div>
-        </figure>
-      </div>
+				{/* RIGHT: 3D Model or Visual */}
+				<figure>
+					<div className='hero-3d-layout'>
+						<HeroExperience />
+					</div>
+				</figure>
+			</div>
 
-      <AnimatedCounter />
-    </section>
-  );
+			<AnimatedCounter />
+		</section>
+	);
 };
 
 export default Hero;
