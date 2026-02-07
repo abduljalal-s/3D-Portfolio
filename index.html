@@ -3,13 +3,6 @@
 
 <head>
   <meta name="p:domain_verify" content="eeacbfbf3dfc177f3df10a5d18898a54" />
-  <!-- //pagevisit -->
-  <script>
-    pintrk('track', 'pagevisit', {
-      event_id: 'eventId0001'
-    });
-  </script>
-
   <!-- Pinterest Tag -->
   <script>
     !function (e) {
@@ -26,10 +19,6 @@
     pintrk('load', '2613302123349', { em: '<user_email_address>' });
     pintrk('page');
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none;" alt=""
-      src="https://ct.pinterest.com/v3/?event=init&tid=2613302123349&pd[em]=<hashed_email_address>&noscript=1" />
-  </noscript>
   <!-- end Pinterest Tag -->
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/images/Fav.jpg" />
@@ -38,6 +27,18 @@
 </head>
 
 <body>
+  <!-- Pinterest noscript - moved from head -->
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+      src="https://ct.pinterest.com/v3/?event=init&tid=2613302123349&pd[em]=<hashed_email_address>&noscript=1" />
+  </noscript>
+  <!-- pagevisit -->
+  <script>
+    pintrk('track', 'pagevisit', {
+      event_id: 'eventId0001'
+    });
+  </script>
+
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
