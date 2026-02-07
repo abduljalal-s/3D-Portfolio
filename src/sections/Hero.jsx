@@ -52,12 +52,7 @@ const Hero = () => {
 
 						<p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
 							I’m a results-driven software engineer with a passion for building
-							scalable, efficient systems that solve real-world problems. With
-							deep expertise in [Nextjs,React-native], I’ve led and contributed
-							to projects ranging from sleek front-end interfaces to complex
-							back-end architectures. I thrive in collaborative environments,
-							blending technical insight with clear communication to drive
-							innovation.
+							scalable, efficient systems that solve real-world problems.
 						</p>
 
 						<Button
