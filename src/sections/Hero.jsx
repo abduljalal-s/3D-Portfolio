@@ -51,8 +51,10 @@ const Hero = () => {
 						</div>
 
 						<p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
-							I’m a results-driven software engineer with a passion for building
-							scalable, efficient systems that solve real-world problems.
+							Results-driven full-stack software engineer with expertise in
+							modern web development and Solana blockchain. I build scalable,
+							efficient applications—from dynamic frontends to robust backends
+							and decentralized solutions—that solve real-world problems.
 						</p>
 
 						<Button
